@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Exo';
+  src: url('./assets/font/exo2-medium.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Exo';
+  src: url('./assets/font/exo2-bold.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  font-family: 'Exo', sans-serif;
+  display: grid;
+  place-content: center;
+  background-color: hsl(from var(--light-blue) h s l /.5);
+}
+
+main {
+  margin-block: 1rem;
+  padding: 3rem 1.5rem;
+  inline-size: clamp(18.75rem, 80vw, 21.25rem);
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+  border: 2px solid var(--coffee);
+  border-radius: var(--radius);
+  background-color: hsl(from var(--sky-blue) h s l/.5);
+  color: var(--coffee);
+}
+
+h1 {
+  margin: 0;
+}
+img {
+  inline-size: 55%;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+input, button {
+  padding-block: .6rem;
+  font-family: inherit;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: var(--radius);
+  text-align: center;
+  color: inherit;
+}
+button {
+  font-weight: 700;
+  background-color: var(--coffee);
+  color: var(--sky-blue);
+  cursor: pointer;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+li {
+  flex-grow: 1;
+  padding: .8rem 1.5rem;
+  background-color: hsl(from var(--beaver) h s l/.15);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+:root {
+  --coffee: #593c27;
+  --beaver: hwb(22 40% 38%);
+  --copper: hsl(24, 48%, 48%);
+  --light-red: hsl(1, 98%, 79%);
+  --sky-blue: hsl(197, 68%, 77%);
+  --light-blue: hsl(194, 79%, 85%);
+  --radius: .6rem;
+}
+
+*:focus-visible {
+  outline: .15rem dotted var(--coffee);
+  outline-offset: .1rem;
+}
+
+@media (hover:hover) {
+  button:hover {
+    background-color: var(--light-red);
+    color: var(--coffee);
+  }
+  li:hover {
+    background-color: hsl(from var(--copper) h s l/.5);
+  }
+}
+

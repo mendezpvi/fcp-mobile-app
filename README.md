@@ -32,13 +32,13 @@
 
 ## *I learnt* :nerd_face:
 
-✅import  
+✅ import  
 ```js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 ```
 
-✅Firebase: initializeApp  
+✅ Firebase: initializeApp  
 ```js
 const appSettings = {
   databaseURL: "https://shopping-list-e9203-default-rtdb.firebaseio.com/"
@@ -46,62 +46,62 @@ const appSettings = {
 const app = initializeApp(appSettings)
 ```
 
-✅Firebase: getDatabase  
+✅ Firebase: getDatabase  
 ```js
 const database = getDatabase(app)
 ```
 
-✅Firebase: reference  
+✅ Firebase: reference  
 ```js
 const shoppingListInDB = ref(database, "shoppingList")
 ```
 
-✅Firebase: push  
+✅ Firebase: push  
 ```js
 push(shoppingListInDB, inputValue)
 ```
 
-✅Firebase: onValue
+✅ Firebase: onValue
 
-✅Firebase: snapshot  
+✅ Firebase: snapshot  
 ```js
 onValue(shoppingListInDB, function(snapshot) {
   // CODE
 })
 ```
 
-✅ID's
+✅ ID's
 
-✅Firebase: remove  
+✅ Firebase: remove  
 ```js
 remove(exactLocationItemInDB)
 ```
 
-✅Object ➡️ Array  
+✅ Object ➡️ Array  
 ```js
 let itemsArr = Object.entries(snapshot.val())
 ```
 
-✅createElement  
+✅ createElement  
 ```js
 const LI = document.createElement("LI")
 LI.textContent = itemValue
 ```
 
-✅Flexbox: flex-wrap
+✅ Flexbox: flex-wrap
 
-✅Flexbox: gap
+✅ Flexbox: gap
 
-✅user-select
+✅ user-select
 
-✅Setting the viewport  
+✅ Setting the viewport  
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-✅Favicon
+✅ Favicon
 
-✅Web Application Manifest  
+✅ Web Application Manifest  
 ```json
 {
   "name": "Shopping List",

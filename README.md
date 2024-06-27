@@ -12,6 +12,8 @@
 
 [Live Site URL](https://mendezpvi.github.io/fcp-mobile-app/) 👀
 
+[Scrimba projects]([https://mendezpvi.github.io/fcp-mobile-app/](https://github.com/mendezpvi/fcp-scrimba)) 👀
+
 ## Steps:
 
 1️⃣ Add the input value to the DB.
